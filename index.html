@@ -3,110 +3,283 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EMERAAS — Advanced AI Solutions and Geo-Content optimization</title>
-  <meta name="description" content="EMERAAS delivers state-of-the-art AI infrastructure and local digital footprint optimization. Optimized for Gemini, Perplexity, GPTBot, and human searchers.">
-  
-  <!-- AI / LLM Crawler optimization metadata -->
+  <title>EMERAAS Assistance — 24/7 Emergency Assistance in Thailand</title>
+  <meta name="description" content="Emeraas Emergency Assistance Co., Ltd. delivers 24/7 critical, accident, medical and legal assistance support for expats and tourists in Thailand.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://emeraas.pages.dev/">
 
-  <!-- Structured Data / JSON-LD for AI Search engines -->
+  <!-- AI Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "EMERAAS",
+    "@type": "EmergencyService",
+    "name": "EMERAAS Assistance",
     "url": "https://emeraas.pages.dev/",
-    "description": "Advanced AI Solutions and Geo-Content optimization",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://emeraas.pages.dev/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+    "telephone": "+66-2-113-1200",
+    "email": "sos@emeraas.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hua Hin",
+      "addressRegion": "Prachuap Khiri Khan",
+      "addressCountry": "Thailand"
+    },
+    "description": "24/7 Emergency Personal Assistance in Thailand for accidents, medical, and legal help."
   }
   </script>
 </head>
 <body class="bg-slate-50 text-slate-900 flex flex-col min-h-screen">
 
-  <!-- Header -->
-  <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+  <!-- Top SOS Banner -->
+  <div class="bg-red-600 text-white font-extrabold py-2.5 px-4 text-center text-sm md:text-base animate-pulse sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6">
+      <span>🚨 24/7 EMERGENCY SOS HOTLINE: <a href="tel:+6621131200" class="underline hover:text-red-100">+66 (0) 2 113 1200</a></span>
+      <span class="hidden md:inline">|</span>
+      <span>✉️ EMAIL: <a href="mailto:sos@emeraas.com" class="underline hover:text-red-100">sos@emeraas.com</a></span>
+      <span class="hidden md:inline">|</span>
+      <span>💬 LINE: <a href="https://line.me/ti/p/@sosemeraas" class="underline hover:text-red-100" target="_blank">@sosemeraas</a></span>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="bg-white border-b border-red-100 sticky top-[48px] z-40 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <span class="text-2xl font-black tracking-tight text-orange-600">EMERAAS</span>
+        <a href="/" class="text-2xl font-black tracking-tight text-red-600 flex items-center gap-2">
+          <span class="text-3xl">✚</span> EMERAAS
+        </a>
       </div>
-      <nav class="hidden md:flex items-center gap-8 font-semibold text-slate-600 text-sm">
-        <a href="/" class="text-orange-600">Home</a>
-        <a href="/about.html" class="hover:text-slate-900 transition">About</a>
-        <a href="#services" class="hover:text-slate-900 transition">Services</a>
+      <nav class="hidden lg:flex items-center gap-6 font-bold text-slate-700 text-sm">
+        <a href="/" class="text-red-600">Home</a>
+        <a href="/about.html" class="hover:text-red-600 transition">About Us</a>
+        <div class="relative group">
+          <button class="hover:text-red-600 transition flex items-center gap-1">
+            Our Services <span class="text-[10px]">&darr;</span>
+          </button>
+          <div class="absolute left-0 mt-2 w-64 bg-white border border-slate-200 rounded-xl shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition duration-150 z-50">
+            <div class="p-2">
+              <a href="/service-accident.html" class="block px-4 py-2 hover:bg-red-50 hover:text-red-600 rounded-lg text-xs font-semibold text-slate-700">🚗 Road & Accident Assistance</a>
+              <a href="/service-medical.html" class="block px-4 py-2 hover:bg-red-50 hover:text-red-600 rounded-lg text-xs font-semibold text-slate-700">🏥 Medical & Hospital Admission</a>
+              <a href="/service-legal.html" class="block px-4 py-2 hover:bg-red-50 hover:text-red-600 rounded-lg text-xs font-semibold text-slate-700">⚖️ Legal & Police Assistance</a>
+              <a href="/service-documents.html" class="block px-4 py-2 hover:bg-red-50 hover:text-red-600 rounded-lg text-xs font-semibold text-slate-700">🔑 Lost Documents & Belongings</a>
+              <a href="/service-critical.html" class="block px-4 py-2 hover:bg-red-50 hover:text-red-600 rounded-lg text-xs font-semibold text-slate-700">🕯️ Critical Moments & Repatriation</a>
+            </div>
+          </div>
+        </div>
+        <a href="/membership.html" class="hover:text-red-600 transition">Membership Card</a>
+        <a href="/contact.html" class="hover:text-red-600 transition">Contact & SOS</a>
       </nav>
-      <div class="flex items-center gap-4">
-        <a href="#contact" class="bg-orange-600 hover:bg-orange-700 text-white text-sm font-bold py-2 px-4 rounded-lg shadow-sm transition">Get Started</a>
+      <div class="flex items-center gap-3">
+        <a href="tel:+6621131200" class="bg-red-600 hover:bg-red-700 text-white text-sm font-black py-2.5 px-4 rounded-lg shadow-sm transition flex items-center gap-2">
+          <span>📞 CALL SOS</span>
+        </a>
       </div>
     </div>
   </header>
 
   <!-- Hero Section -->
   <main class="flex-grow">
-    <section class="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-24 px-4 sm:px-6 lg:px-8 text-center">
-      <div class="max-w-4xl mx-auto">
-        <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-none mb-6">
-          Optimize Your Brand for the <span class="text-orange-500">AI Search Era</span>
-        </h1>
-        <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto mb-10">
-          EMERAAS bridges the gap between static websites and AI crawlers, optimizing your visibility on LLM engines like Gemini, ChatGPT, and Perplexity.
-        </p>
-        <div class="flex justify-center gap-4">
-          <a href="/about.html" class="bg-white hover:bg-slate-100 text-slate-900 font-bold py-3 px-6 rounded-xl transition">Learn More</a>
-          <a href="#services" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-xl transition">Our Services</a>
+    <section class="bg-white border-b border-red-50 py-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="bg-red-100 text-red-700 font-extrabold text-xs tracking-wider uppercase py-1.5 px-3.5 rounded-full inline-block mb-6">
+            ✚ 24/7/365 Assistance Service in Thailand
+          </span>
+          <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-slate-900 leading-none mb-6">
+            Emergency Support <br/>For Foreigners <span class="text-red-600">In Thailand</span>
+          </h1>
+          <p class="text-lg text-slate-600 max-w-xl mb-10">
+            Language barriers, unfamiliar laws, and medical emergencies can turn a dream trip into a nightmare. The EMERAAS Emergency Card guarantees 24/7 on-site and remote dispatch aid in your native tongue.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="/membership.html" class="bg-red-600 hover:bg-red-700 text-white font-extrabold py-3.5 px-8 rounded-xl shadow-md hover:shadow-lg transition">
+              Get Your Assistance Card
+            </a>
+            <a href="/contact.html" class="bg-white border-2 border-slate-200 hover:border-red-600 text-slate-800 hover:text-red-600 font-bold py-3.5 px-8 rounded-xl transition">
+              Contact Dispatch Center
+            </a>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-red-600 to-red-800 p-8 rounded-3xl text-white shadow-xl relative overflow-hidden">
+          <div class="absolute -right-16 -top-16 w-48 h-48 bg-white opacity-5 rounded-full"></div>
+          <h3 class="text-2xl font-black mb-4">EMERAAS Emergency Card</h3>
+          <p class="text-sm text-red-100 mb-8 max-w-sm">
+            Keep this card with you in your wallet or on your phone. In case of an accident, arrest, or medical emergency, scanning the QR code connects you instantly to our multi-lingual emergency desk.
+          </p>
+          <div class="border-t border-red-500 pt-6 flex justify-between items-center text-xs">
+            <div>
+              <p class="text-red-300 uppercase font-bold tracking-wider">Emergency Hotline</p>
+              <p class="text-lg font-black">+66 (0) 2 113 1200</p>
+            </div>
+            <div class="bg-white text-red-700 font-extrabold py-2 px-4 rounded-lg">
+              MEMBERS ONLY
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Services / Details -->
-    <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">What We Deliver</h2>
-        <p class="mt-4 max-w-2xl mx-auto text-slate-500">Designed from the ground up for search engine robots and human eyes alike.</p>
-      </div>
+    <!-- Core Services Grid -->
+    <section class="py-24 bg-slate-50 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Our SOS Services</h2>
+          <p class="text-slate-500 mt-4 max-w-xl mx-auto">Five core assistance lines engineered to protect you from language boundaries, administrative traps, and emergency costs.</p>
+        </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Card 1 -->
-        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
-          <div class="text-orange-600 text-3xl mb-4">🤖</div>
-          <h3 class="text-xl font-bold mb-2">LLM Compatibility</h3>
-          <p class="text-slate-600 text-sm">
-            Semantic flat HTML structures optimized directly for AI crawlers, ensuring your website gets scraped and referenced in answers correctly.
-          </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Road Accident -->
+          <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+            <div>
+              <span class="text-4xl inline-block mb-6">🚗</span>
+              <h3 class="text-xl font-black text-slate-900 mb-2">Road & Accident Assistance</h3>
+              <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                If you get into a road accident, we coordinate translators, liaise with local traffic police, and ensure fair reporting.
+              </p>
+            </div>
+            <a href="/service-accident.html" class="text-red-600 font-bold hover:text-red-700 text-sm flex items-center gap-1">
+              Read details &rarr;
+            </a>
+          </div>
+
+          <!-- Medical -->
+          <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+            <div>
+              <span class="text-4xl inline-block mb-6">🏥</span>
+              <h3 class="text-xl font-black text-slate-900 mb-2">Medical & Admission Help</h3>
+              <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                Fast-track hospital admission. We verify your insurance or financial guarantees so hospitals don't deny emergency treatment.
+              </p>
+            </div>
+            <a href="/service-medical.html" class="text-red-600 font-bold hover:text-red-700 text-sm flex items-center gap-1">
+              Read details &rarr;
+            </a>
+          </div>
+
+          <!-- Legal -->
+          <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+            <div>
+              <span class="text-4xl inline-block mb-6">⚖️</span>
+              <h3 class="text-xl font-black text-slate-900 mb-2">Legal & Police Assistance</h3>
+              <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                Immediate legal consultation and local bail coordination when dealing with Thai law enforcement, arrests, or disputes.
+              </p>
+            </div>
+            <a href="/service-legal.html" class="text-red-600 font-bold hover:text-red-700 text-sm flex items-center gap-1">
+              Read details &rarr;
+            </a>
+          </div>
+
+          <!-- Documents -->
+          <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+            <div>
+              <span class="text-4xl inline-block mb-6">🔑</span>
+              <h3 class="text-xl font-black text-slate-900 mb-2">Lost Documents & Belongings</h3>
+              <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                Lost your passport, wallet, or phone? We guide you through police reporting, embassy notification, and replacement documents.
+              </p>
+            </div>
+            <a href="/service-documents.html" class="text-red-600 font-bold hover:text-red-700 text-sm flex items-center gap-1">
+              Read details &rarr;
+            </a>
+          </div>
+
+          <!-- Critical -->
+          <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+            <div>
+              <span class="text-4xl inline-block mb-6">🕯️</span>
+              <h3 class="text-xl font-black text-slate-900 mb-2">Critical Moments Assistance</h3>
+              <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                Repatriation support, medical evacuation coordination, embassy notifications, and paperwork support during extreme incidents or death.
+              </p>
+            </div>
+            <a href="/service-critical.html" class="text-red-600 font-bold hover:text-red-700 text-sm flex items-center gap-1">
+              Read details &rarr;
+            </a>
+          </div>
+
+          <!-- Call to Action Card -->
+          <div class="bg-red-50 p-8 rounded-2xl border border-red-100 flex flex-col justify-between items-start">
+            <div>
+              <h3 class="text-xl font-black text-red-950 mb-2">Join Emeraas Today</h3>
+              <p class="text-red-800 text-xs mb-6 leading-relaxed">
+                Unlock instant peace of mind across Thailand. Starting from only a few hundred baht, ensure you are protected against any unexpected incidents.
+              </p>
+            </div>
+            <a href="/membership.html" class="bg-red-600 hover:bg-red-700 text-white font-extrabold text-xs py-3 px-6 rounded-lg shadow-sm transition">
+              View Membership Options
+            </a>
+          </div>
         </div>
-        <!-- Card 2 -->
-        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
-          <div class="text-orange-600 text-3xl mb-4">🌍</div>
-          <h3 class="text-xl font-bold mb-2">Geo-Content Strategy</h3>
-          <p class="text-slate-600 text-sm">
-            Structuring location data, contacts, and services maps so local searches in ChatGPT and Google Maps prioritize your business.
-          </p>
-        </div>
-        <!-- Card 3 -->
-        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
-          <div class="text-orange-600 text-3xl mb-4">⚡</div>
-          <h3 class="text-xl font-bold mb-2">Lightning Fast Performance</h3>
-          <p class="text-slate-600 text-sm">
-            Zero client-side JS hydration delays. Plain HTML structure means instant loading times and 100/100 Lighthouse performance metrics.
-          </p>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 bg-white border-t border-slate-100 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-black text-slate-900 mb-12">Designed for absolute trust and efficiency</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+          <div class="flex gap-4">
+            <span class="text-red-600 font-extrabold text-2xl">✔</span>
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">Local Emergency Dispatch Desk</h4>
+              <p class="text-slate-600 text-xs">Based in Hua Hin with direct connections to local hospitals, tourist police, and multi-lingual translators.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-red-600 font-extrabold text-2xl">✔</span>
+            <div>
+              <h4 class="font-bold text-slate-900 mb-1">Native Language Translators</h4>
+              <p class="text-slate-600 text-xs">Never suffer from language boundaries during road accidents or medical checks when dealing with officials.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-      <span class="text-xl font-black text-white">EMERAAS</span>
-      <p class="text-xs">&copy; 2026 EMERAAS. All rights reserved.</p>
+  <footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-900 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+      <div>
+        <span class="text-2xl font-black text-white flex items-center gap-2 mb-4">
+          <span class="text-red-600">✚</span> EMERAAS
+        </span>
+        <p class="text-xs text-slate-400 leading-relaxed max-w-xs">
+          Emeraas Emergency Assistance Co., Ltd. is your trusted partner for emergency response in Thailand. Operating 24/7/365 to deliver peace of mind for expats and travelers.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-white font-bold text-sm mb-4">Emergency Services</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="/service-accident.html" class="hover:text-white transition">🚗 Accident Assistance</a></li>
+          <li><a href="/service-medical.html" class="hover:text-white transition">🏥 Medical Admission</a></li>
+          <li><a href="/service-legal.html" class="hover:text-white transition">⚖️ Legal & Police Aid</a></li>
+          <li><a href="/service-documents.html" class="hover:text-white transition">🔑 Lost Documents Support</a></li>
+          <li><a href="/service-critical.html" class="hover:text-white transition">🕯️ Critical Repatriation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold text-sm mb-4">Membership Info</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="/membership.html" class="hover:text-white transition">Emeraas Card Tiers</a></li>
+          <li><a href="/membership.html#pricing" class="hover:text-white transition">Pricing Plans</a></li>
+          <li><a href="/about.html" class="hover:text-white transition">About Emeraas Thailand</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold text-sm mb-4">SOS Dispatch Center</h4>
+        <p class="text-xs text-slate-400 leading-relaxed mb-4">
+          Hin Lek Fai Subdistrict, Hua Hin District, Prachuap Khiri Khan, Thailand.
+        </p>
+        <p class="text-xs text-white font-bold mb-1">📞 SOS Hotline: +66 (0) 2 113 1200</p>
+        <p class="text-xs text-white font-bold">✉️ Email: sos@emeraas.com</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto pt-8 border-t border-slate-900 flex flex-col md:flex-row items-center justify-between gap-6">
+      <p class="text-xs text-slate-500">&copy; 2026 Emeraas Emergency Assistance Co., Ltd. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Connect JS Core -->
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>
