@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node scripts/compile-i18n.js && vite",
+    "build": "node scripts/compile-i18n.js && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
