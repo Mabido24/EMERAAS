@@ -15,7 +15,7 @@ export default {
           light: '#f8fafc',
           dark: '#0f172a',
           orange: '#ea580c',
-          sos: '#ff0000',
+          sos: '#b30000',
         }
       }
     },

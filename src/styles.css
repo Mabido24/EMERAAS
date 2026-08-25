@@ -10,10 +10,10 @@ body {
 }
 
 @layer components {
-  /* Vivid emergency SOS top banner */
+  /* Dark vivid emergency SOS top banner */
   .sos-banner {
     @apply text-white font-extrabold py-2.5 px-4 text-center text-sm md:text-base animate-pulse sticky top-0 z-50 shadow-lg;
-    background-color: #ff0000;
+    background-color: #b30000;
   }
 
   /* Light red rounded frame around page sections */
