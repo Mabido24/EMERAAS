@@ -184,5 +184,19 @@
   "critical_how_3_title": "Suivi officiel avec l'ambassade",
   "critical_how_3_desc": "Nous transmettons les rapports aux services consulaires pour assister légalement votre famille.",
   "critical_tip_title": "Soutien de crise",
-  "critical_tip_desc": "Notre centre travaille en conformité avec les compagnies d'assurance internationales et les représentations consulaires."
+  "critical_tip_desc": "Notre centre travaille en conformité avec les compagnies d'assurance internationales et les représentations consulaires.",
+  "back_to": "Retour à",
+  "next_medical": "Assistance médicale",
+  "next_legal": "Assistance juridique",
+  "next_documents": "Documents perdus",
+  "next_critical": "Moments critiques",
+  "footer_link_tiers": "Formules Carte Emeraas",
+  "footer_link_pricing": "Tarifs",
+  "footer_link_about": "À propos d'Emeraas Thaïlande",
+  "footer_address": "Sous-district de Hin Lek Fai, district de Hua Hin, Prachuap Khiri Khan, Thaïlande.",
+  "footer_accident_short": "Assistance accidents",
+  "footer_medical_short": "Admission médicale",
+  "footer_legal_short": "Aide juridique & police",
+  "footer_documents_short": "Documents perdus",
+  "footer_critical_short": "Rapatriement critique"
 }

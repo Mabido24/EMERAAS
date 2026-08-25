@@ -184,5 +184,19 @@
   "critical_how_3_title": "Official Embassy Notifications",
   "critical_how_3_desc": "We work in direct communication with consular offices, ensuring official notifications are sent, and your family is fully briefed through secure, official channels.",
   "critical_tip_title": "Crisis Coordination Support",
-  "critical_tip_desc": "Our dispatch center operates in close compliance with international travel standards and consular networks, providing a reliable point of contact for family members abroad."
+  "critical_tip_desc": "Our dispatch center operates in close compliance with international travel standards and consular networks, providing a reliable point of contact for family members abroad.",
+  "back_to": "Back to",
+  "next_medical": "Medical Assistance",
+  "next_legal": "Legal Assistance",
+  "next_documents": "Lost Documents",
+  "next_critical": "Critical Moments",
+  "footer_link_tiers": "Emeraas Card Tiers",
+  "footer_link_pricing": "Pricing Plans",
+  "footer_link_about": "About Emeraas Thailand",
+  "footer_address": "Hin Lek Fai Subdistrict, Hua Hin District, Prachuap Khiri Khan, Thailand.",
+  "footer_accident_short": "Accident Assistance",
+  "footer_medical_short": "Medical Admission",
+  "footer_legal_short": "Legal & Police Aid",
+  "footer_documents_short": "Lost Documents Support",
+  "footer_critical_short": "Critical Repatriation"
 }

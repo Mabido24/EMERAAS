@@ -184,5 +184,19 @@
   "critical_how_3_title": "Konsularischer Beistand",
   "critical_how_3_desc": "Wir leiten Dokumente an Behörden zur Unterstützung der Familie weiter.",
   "critical_tip_title": "Krisenhilfe",
-  "critical_tip_desc": "Unsere Zentrale kooperiert mit internationalen Assekuranzen und Konsulaten."
+  "critical_tip_desc": "Unsere Zentrale kooperiert mit internationalen Assekuranzen und Konsulaten.",
+  "back_to": "Zurück zu",
+  "next_medical": "Medizinische Hilfe",
+  "next_legal": "Rechtliche Hilfe",
+  "next_documents": "Verlorene Dokumente",
+  "next_critical": "Kritische Momente",
+  "footer_link_tiers": "Emeraas-Kartenstufen",
+  "footer_link_pricing": "Preispläne",
+  "footer_link_about": "Über Emeraas Thailand",
+  "footer_address": "Hin Lek Fai, Hua Hin, Prachuap Khiri Khan, Thailand.",
+  "footer_accident_short": "Unfallhilfe",
+  "footer_medical_short": "Krankenhausaufnahme",
+  "footer_legal_short": "Recht & Polizei",
+  "footer_documents_short": "Dokumente verloren",
+  "footer_critical_short": "Kritische Rückführung"
 }

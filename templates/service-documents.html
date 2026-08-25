@@ -93,9 +93,9 @@
     </div>
 
     <div class="mt-12 flex gap-4">
-      <a href="/service-legal.html" class="text-slate-600 hover:text-red-600 transition font-bold">&larr; Legal Support</a>
+      <a href="/service-legal.html" class="text-slate-600 hover:text-red-600 transition font-bold">&larr; {{next_legal}}</a>
       <span class="text-slate-300">|</span>
-      <a href="/service-critical.html" class="text-slate-600 hover:text-red-600 transition font-bold">Critical Moments &rarr;</a>
+      <a href="/service-critical.html" class="text-slate-600 hover:text-red-600 transition font-bold">{{next_critical}} &rarr;</a>
     </div>
   </main>
 
@@ -113,25 +113,25 @@
       <div>
         <h4 class="text-white font-bold text-sm mb-4">{{footer_emergency_services}}</h4>
         <ul class="space-y-2 text-xs">
-          <li><a href="/service-accident.html" class="hover:text-white transition">🚗 Accident Assistance</a></li>
-          <li><a href="/service-medical.html" class="hover:text-white transition">🏥 Medical Admission</a></li>
-          <li><a href="/service-legal.html" class="hover:text-white transition">⚖️ Legal & Police Aid</a></li>
-          <li><a href="/service-documents.html" class="hover:text-white transition">🔑 Lost Documents Support</a></li>
-          <li><a href="/service-critical.html" class="hover:text-white transition">🕯️ Critical Repatriation</a></li>
+          <li><a href="/service-accident.html" class="hover:text-white transition">🚗 {{footer_accident_short}}</a></li>
+          <li><a href="/service-medical.html" class="hover:text-white transition">🏥 {{footer_medical_short}}</a></li>
+          <li><a href="/service-legal.html" class="hover:text-white transition">⚖️ {{footer_legal_short}}</a></li>
+          <li><a href="/service-documents.html" class="hover:text-white transition">🔑 {{footer_documents_short}}</a></li>
+          <li><a href="/service-critical.html" class="hover:text-white transition">🕯️ {{footer_critical_short}}</a></li>
         </ul>
       </div>
       <div>
         <h4 class="text-white font-bold text-sm mb-4">{{footer_membership_info}}</h4>
         <ul class="space-y-2 text-xs">
-          <li><a href="/membership.html" class="hover:text-white transition">Emeraas Card Tiers</a></li>
-          <li><a href="/membership.html#pricing" class="hover:text-white transition">Pricing Plans</a></li>
-          <li><a href="/about.html" class="hover:text-white transition">About Emeraas Thailand</a></li>
+          <li><a href="/membership.html" class="hover:text-white transition">{{footer_link_tiers}}</a></li>
+          <li><a href="/membership.html#pricing" class="hover:text-white transition">{{footer_link_pricing}}</a></li>
+          <li><a href="/about.html" class="hover:text-white transition">{{footer_link_about}}</a></li>
         </ul>
       </div>
       <div>
         <h4 class="text-white font-bold text-sm mb-4">{{footer_dispatch_center}}</h4>
         <p class="text-xs text-slate-400 leading-relaxed mb-4">
-          Hin Lek Fai Subdistrict, Hua Hin District, Prachuap Khiri Khan, Thailand.
+          {{footer_address}}
         </p>
         <p class="text-xs text-white font-bold mb-1">📞 {{footer_hotline}} +66 (0) 2 113 1200</p>
         <p class="text-xs text-white font-bold">✉️ {{footer_email}} sos@emeraas.com</p>

@@ -62,7 +62,7 @@
   <main class="flex-grow max-w-4xl mx-auto py-20 px-4 sm:px-6 lg:px-8">
     <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 mb-6">{{about_title}}</h1>
     <p class="text-lg text-slate-600 leading-relaxed mb-6">
-      <strong>EMERAS CO. LTD</strong> (known publically as <strong>Emeraas Emergency Assistance</strong>) is a specialized emergency support organization incorporated in Thailand. Operating from our central dispatch base in <strong>Hua Hin</strong> (Hin Lek Fai Subdistrict), we provide a 24-hour hotline and field support setup engineered to assist foreigners during critical, unexpected situations.
+      {{about_body_1}}
     </p>
     <p class="text-lg text-slate-600 leading-relaxed mb-6">
       {{about_body_2}}
@@ -77,21 +77,20 @@
 
     <h2 class="text-2xl font-black text-slate-900 mt-12 mb-4">{{about_join_title}}</h2>
     <p class="text-slate-600 text-sm leading-relaxed mb-6">
-      We are constantly expanding our rescue network and local representation across Thailand. 
-      If you are based in Hua Hin, Cha-am, Pranburi, or Phetchaburi, we regularly open recruitment for:
+      {{about_join_body}}
     </p>
     <ul class="list-disc pl-6 text-sm text-slate-600 space-y-2 mb-10">
-      <li><strong>Emergency Response Officers (Call Center):</strong> Fluent in Thai & English, managing emergency cases and liaising with local providers.</li>
-      <li><strong>Independent Sales Representatives:</strong> Flexible commission-based agents representing our Emergency {{membership_tag}}.</li>
+      <li>{{about_join_role_1}}</li>
+      <li>{{about_join_role_2}}</li>
     </ul>
 
     <p class="text-sm text-slate-500">
-      To apply or get in touch regarding partnerships, email us at <a href="mailto:job@emeraas.com" class="text-red-600 font-bold hover:underline">job@emeraas.com</a> or message us on LINE at <a href="https://line.me/ti/p/@sosemeraas" class="text-red-600 font-bold hover:underline" target="_blank">@sosemeraas</a>.
+      {{about_contact_footer}}
     </p>
 
     <div class="mt-12">
       <a href="/" class="inline-flex items-center gap-2 text-red-600 font-bold hover:text-red-700 transition">
-        &larr; Back to {{nav_home}}
+        &larr; {{back_to}} {{nav_home}}
       </a>
     </div>
   </main>
@@ -110,25 +109,25 @@
       <div>
         <h4 class="text-white font-bold text-sm mb-4">{{footer_emergency_services}}</h4>
         <ul class="space-y-2 text-xs">
-          <li><a href="/service-accident.html" class="hover:text-white transition">🚗 Accident Assistance</a></li>
-          <li><a href="/service-medical.html" class="hover:text-white transition">🏥 Medical Admission</a></li>
-          <li><a href="/service-legal.html" class="hover:text-white transition">⚖️ Legal & Police Aid</a></li>
-          <li><a href="/service-documents.html" class="hover:text-white transition">🔑 Lost Documents Support</a></li>
-          <li><a href="/service-critical.html" class="hover:text-white transition">🕯️ Critical Repatriation</a></li>
+          <li><a href="/service-accident.html" class="hover:text-white transition">🚗 {{footer_accident_short}}</a></li>
+          <li><a href="/service-medical.html" class="hover:text-white transition">🏥 {{footer_medical_short}}</a></li>
+          <li><a href="/service-legal.html" class="hover:text-white transition">⚖️ {{footer_legal_short}}</a></li>
+          <li><a href="/service-documents.html" class="hover:text-white transition">🔑 {{footer_documents_short}}</a></li>
+          <li><a href="/service-critical.html" class="hover:text-white transition">🕯️ {{footer_critical_short}}</a></li>
         </ul>
       </div>
       <div>
         <h4 class="text-white font-bold text-sm mb-4">{{footer_membership_info}}</h4>
         <ul class="space-y-2 text-xs">
-          <li><a href="/membership.html" class="hover:text-white transition">Emeraas Card Tiers</a></li>
-          <li><a href="/membership.html#pricing" class="hover:text-white transition">Pricing Plans</a></li>
-          <li><a href="/about.html" class="hover:text-white transition">About Emeraas Thailand</a></li>
+          <li><a href="/membership.html" class="hover:text-white transition">{{footer_link_tiers}}</a></li>
+          <li><a href="/membership.html#pricing" class="hover:text-white transition">{{footer_link_pricing}}</a></li>
+          <li><a href="/about.html" class="hover:text-white transition">{{footer_link_about}}</a></li>
         </ul>
       </div>
       <div>
         <h4 class="text-white font-bold text-sm mb-4">{{footer_dispatch_center}}</h4>
         <p class="text-xs text-slate-400 leading-relaxed mb-4">
-          Hin Lek Fai Subdistrict, Hua Hin District, Prachuap Khiri Khan, Thailand.
+          {{footer_address}}
         </p>
         <p class="text-xs text-white font-bold mb-1">📞 {{footer_hotline}} +66 (0) 2 113 1200</p>
         <p class="text-xs text-white font-bold">✉️ {{footer_email}} sos@emeraas.com</p>

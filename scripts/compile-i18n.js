@@ -20,9 +20,18 @@ const languages = [
   { code: 'ar', label: '🇦🇪 AR' }
 ]
 
+function pageUrl(langCode, pageName) {
+  const base = pageName.replace(/\.html$/, '')
+  const isIndex = base === 'index'
+  if (langCode === 'en') {
+    return isIndex ? '/' : `/${base}`
+  }
+  return isIndex ? `/${langCode}/` : `/${langCode}/${base}`
+}
+
 function generateLanguageSwitcher(currentLang, pageName) {
   const options = languages.map(lang => {
-    const value = lang.code === 'en' ? `/${pageName}` : `/${lang.code}/${pageName}`
+    const value = pageUrl(lang.code, pageName)
     const selected = lang.code === currentLang ? 'selected' : ''
     return `<option value="${value}" ${selected}>${lang.label}</option>`
   }).join('\n      ')
@@ -64,13 +73,19 @@ function compilePage(templateContent, lang, pageName, locales) {
   })
 
   // Rewrite internal links if we are inside a language subdirectory (non-English)
+  // Extensionless paths match Cloudflare Pages pretty URLs.
   if (lang !== 'en') {
-    // Rewrite standard root links to be language directory aware:
-    // href="/about.html" -> href="/fr/about.html"
+    // href="/about.html" -> href="/fr/about"
+    // href="/about.html#x" -> href="/fr/about#x"
+    // href="/" -> href="/fr/"
     // href="/#services" -> href="/fr/#services"
-    // href="/" -> href="/fr/index.html"
-    content = content.replace(/href="\/([a-zA-Z0-9_-]+\.html)(#[a-zA-Z0-9_-]+)?"/g, `href="/${lang}/$1$2"`)
-    content = content.replace(/href="\/(#[a-zA-Z0-9_-]+)?"/g, `href="/${lang}/index.html$1"`)
+    content = content.replace(/href="\/([a-zA-Z0-9_-]+)\.html(#[a-zA-Z0-9_-]+)?"/g, (_, page, hash = '') => {
+      return `href="/${lang}/${page}${hash}"`
+    })
+    content = content.replace(/href="\/(#[a-zA-Z0-9_-]+)?"/g, `href="/${lang}/$1"`)
+  } else {
+    // EN: strip .html for Cloudflare Pages pretty URLs
+    content = content.replace(/href="\/([a-zA-Z0-9_-]+)\.html(#[a-zA-Z0-9_-]+)?"/g, 'href="/$1$2"')
   }
   
   return content
