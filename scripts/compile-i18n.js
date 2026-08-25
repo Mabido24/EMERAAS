@@ -50,14 +50,19 @@ function compilePage(templateContent, lang, pageName, locales) {
   const switcherHtml = generateLanguageSwitcher(lang, pageName)
   content = content.replace('{{language_switcher}}', switcherHtml)
   
-  // Replace HTML lang and dir attributes
+  // Replace HTML lang and dir attributes (keep notranslate to block browser auto-translate)
   if (lang === 'ar') {
-    content = content.replace('<html lang="en">', '<html lang="ar" dir="rtl">')
-    content = content.replace('<html lang="fr">', '<html lang="ar" dir="rtl">')
+    content = content.replace(
+      '<html lang="en" translate="no" class="notranslate">',
+      '<html lang="ar" dir="rtl" translate="no" class="notranslate">'
+    )
   } else {
-    content = content.replace('<html lang="en">', `<html lang="${lang}">`)
-    content = content.replace('<html lang="fr">', `<html lang="${lang}">`)
+    content = content.replace(
+      '<html lang="en" translate="no" class="notranslate">',
+      `<html lang="${lang}" translate="no" class="notranslate">`
+    )
   }
+  content = content.replace(/\{\{html_lang\}\}/g, lang)
 
   // Replace translation keys: {{key}}
   const regex = /\{\{([a-zA-Z0-9_]+)\}\}/g
