@@ -4,7 +4,9 @@ export default {
     "./index.html",
     "./about.html",
     "./*.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./**/*.html",
+    "./templates/**/*.html",
+    "./src/**/*.{js,ts,jsx,tsx,css}",
   ],
   theme: {
     extend: {
@@ -13,6 +15,7 @@ export default {
           light: '#f8fafc',
           dark: '#0f172a',
           orange: '#ea580c',
+          sos: '#ff0000',
         }
       }
     },
