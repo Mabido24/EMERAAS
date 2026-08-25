@@ -1,0 +1,14 @@
+---
+description: Always translate EMERAAS UI into all 10 languages without asking
+alwaysApply: true
+---
+
+# EMERAAS i18n — always all languages
+
+When any user-facing text changes (templates, locales, meta, nav, CTA, footer, forms, tips):
+
+1. Update **all** locale files: `en`, `fr`, `de`, `it`, `es`, `pt`, `th`, `ru`, `zh`, `ar`.
+2. Never leave a non-EN locale key equal to English (except unavoidable brands/emails/LINE/@handles/phone).
+3. Do **not** ask Julien before translating.
+4. Run `node scripts/compile-i18n.js` (or `npm run build`) after locale/template edits.
+5. Prefer editing `templates/*.html` + `locales/*.json`; compiled HTML under `/` and `/fr/` etc. is generated.
